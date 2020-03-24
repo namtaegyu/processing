@@ -1,18 +1,33 @@
 void setup(){
+
   size(800,400);
+  
   textSize(128);
+  
 }
+
 int i, dir = 1, sp=1;
+
 void draw(){
+
   fill(0,125,255);
+  
   background(0,255,0);
+  
   text("Graphics", i , 200);
+  
   if(i>width) dir= -1;
+  
   if(i<0) dir=1;
+  
   i = i+dir*sp;
+  
 }
+
 void keyPressed(){
+
   sp = key -'0';
+  
 }
 
 소감 : 이번 프로세싱 시간에는 text 배너를 생성한 뒤, 좌우로 왔다갔다하며, 키보드 숫자를 눌렀을 시에
